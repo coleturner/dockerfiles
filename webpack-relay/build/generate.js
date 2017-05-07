@@ -9,7 +9,7 @@ const {
 const path = require('path');
 const schemaPath = path.join(__dirname, 'schema');
 
-const GRAPH_URL = `http://${process.env.BACKEND_HOSTNAME}:${process.env.BACKEND_PORT}/graphql`;
+const GRAPH_URL = process.env.GRAPHQL_ENDPOINT;
 console.log("Generating schema for Graph: ",GRAPH_URL);
 
 // Save JSON of full schema introspection for Babel Relay Plugin to use

@@ -13,9 +13,9 @@ Recommended:
 
 Environmental Variables:
 ```
+GRAPHQL_ENDPOINT http://web:80/graphql
 SCHEMA_PATH /mnt/app/graphql
 SCHEMA_EXT '*.rb'
-BACKEND_HOSTNAME web
 NODE_ENV development
 WATCHMAN_VERSION v4.7.0
 ```

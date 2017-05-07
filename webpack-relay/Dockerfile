@@ -1,9 +1,9 @@
 MAINTAINER Cole Turner <turner.cole@gmail.com>
 FROM node:7.7.2
 
+ENV GRAPHQL_ENDPOINT http://web:80/graphql
 ENV SCHEMA_PATH /mnt/app/graphql
 ENV SCHEMA_EXT '*.rb'
-ENV BACKEND_HOSTNAME web
 ENV NODE_ENV development
 ENV WATCHMAN_VERSION v4.7.0
 ENV PATH="/usr/local/bin:$PATH"
